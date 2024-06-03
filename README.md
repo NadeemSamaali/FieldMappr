@@ -13,7 +13,7 @@ For the code, important libraries were imported to obtain the desired output. Th
     Then, the function converts the center coordinate of the ring $c$ into an numpy array. To continue, it finds two vectors $\vec{v}_1$ and $\vec{v}_2$ perpendicular to the normal vector $\vec{u}$ of the ring plane. $\vec{v}_1$
     represents any arbitrary perpendicular vector to the normal $\vec{u}$ of the ring. In our code we chose to define $\vec{v}_1$ to result form the following transformation :  
 
-    $$ \vec{u} = (a,b,c) \rightarrow \vec{v}_1 = (b, -a, 0) $$
+    $$\vec{u} = (a,b,c) \rightarrow \vec{v}_1 = (b, -a, 0)$$
 
     So we permutate the first and second component of the normal with respect to each other, inverse the sign of the second component and set the third component to $0$. It is important to note that the vectors $\vec{u}$, $\vec{v}_1$ and $\vec{v}_2$ are stored as numpy arrays to facilitate vector manipulations.
     
