@@ -1,8 +1,7 @@
 # FieldMappr
-Console based software mapping electric fields in three dimensions with the help of user inputted configuration of points, rods and/or rings of charge.
+Library mapping electric fields in three dimensions with the help of user inputted configuration of points, rods and/or rings of charge.
 
-### ElectricMap.py
-Introduces the class `E_map` containing the necesseary methods to build charge configurations, calculate the electric field over a grid of $50 \times 50 \times 50$ meters and print the electric vector field in three dimensions.
+`E_map` is a class containing the necesseary methods to build charge configurations, calculate the electric field over a grid of $50 \times 50 \times 50$ meters and print the electric vector field in three dimensions.
 
 * `build_point` creates a point in the field at a coordinate $p$ with a charge $q$
 * `build_rod` approximates a rod of charge as multiple point charges alinged in a segment of a linear path with initial and terminal coordinates $p_1$ and $p_2$.  The charge values of each point charge within the rod are calculated with the equation $dq = Q \cdot \frac{dl}{l}$, where $Q$ is the total charge of the rod and $l$ is the distance between $p_1$ and $p_2$.
@@ -12,11 +11,6 @@ Introduces the class `E_map` containing the necesseary methods to build charge c
     
     over $[0, 2\pi]$ with an angle step of $\frac{\pi}{180}$ to calculate the coordinates of the charges necessary to approximate the ring of charge.
 
-### App.py
-Contains the code which allows users to interact with the different methods performing the electric field visualization.
-
-### run.bat
-Batch file runnable by user.
 
 
 
